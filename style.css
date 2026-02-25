@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4ff;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background: #0078d4;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 0 0 12px 12px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1rem;
+  transition: opacity 0.2s;
+}
+
+nav a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0078d4, #00b4d8);
+  color: white;
+  border-radius: 12px;
+  margin: 30px 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.hero button, form button {
+  background: white;
+  color: #0078d4;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hero button:hover, form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+/* Cards */
+.cards {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.cards h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #0078d4;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card span {
+  font-size: 2.5rem;
+}
+
+.card h3 {
+  margin: 12px 0 8px;
+  color: #0078d4;
+}
+
+/* Contact */
+.contact {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  color: #0078d4;
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form input, form textarea {
+  padding: 12px 16px;
+  border: 2px solid #cce0f5;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #0078d4;
+}
+
+form button {
+  background: #0078d4;
+  color: white;
+  align-self: center;
+  padding: 12px 40px;
+}
+
+#form-msg {
+  margin-top: 15px;
+  color: green;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px;
+  margin-top: 30px;
+  background: #0078d4;
+  color: white;
+  border-radius: 12px 12px 0 0;
+}
